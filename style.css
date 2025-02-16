@@ -256,7 +256,18 @@ footer {
   padding: 1rem;
 }
 
-/* 文章卡片样式 */
+.article-section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
 .article-card {
   background: #fff;
   padding: 1.5rem;
@@ -272,6 +283,399 @@ footer {
 
 .article-card h3 {
   font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.article-link {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.article-link:hover {
+  color: #0056b3;
+  transform: translateX(5px);
+}
+
+/* 杂志风格文章卡片 */
+.magazine-style {
+  position: relative;
+  background: #fff;
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.magazine-cover {
+  position: relative;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: white;
+  text-align: center;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.magazine-cover h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.magazine-issue {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.magazine-page {
+  padding: 3rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.magazine-toc {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.toc-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toc-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #b21f1f;
+  margin-right: 1.5rem;
+  min-width: 40px;
+}
+
+.toc-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.toc-info h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  min-width: 100px;
+}
+
+.toc-line {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  margin: 0 1rem;
+}
+
+.page-number {
+  color: #666;
+  font-size: 1rem;
+}
+
+.read-more-btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.read-more-btn:hover {
+  background: white;
+  color: #b21f1f;
+}
+
+.magazine-style.expanded {
+  transform: scale(1);
+}
+
+.magazine-style.expanded .article-preview {
+  height: auto;
+  opacity: 1;
+  margin-top: 2rem;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .magazine-cover {
+    padding: 3rem 1rem;
+  }
+
+  .magazine-cover h3 {
+    font-size: 2rem;
+  }
+
+  .magazine-page {
+    padding: 2rem 1rem;
+  }
+
+  .toc-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toc-line {
+    display: none;
+  }
+}
+
+/* 修改杂志预览部分的样式 */
+.article-preview {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.magazine-style.expanded .article-preview {
+  height: auto;
+  opacity: 1;
+  margin-top: 2rem;
+}
+
+/* 修改按钮样式 */
+.read-more-btn {
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.read-more-btn:hover {
+  background: white;
+  color: #b21f1f;
+}
+
+/* 杂志章节样式 */
+.magazine-section {
+  padding: 3rem;
+  background: #fff;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+}
+
+.section-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b21f1f;
+  margin-right: 1.5rem;
+  opacity: 0.8;
+}
+
+.section-header h3 {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+.section-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.section-content h4 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 2rem 0 1rem;
+}
+
+.section-content p {
+  margin-bottom: 1.5rem;
+}
+
+.tech-types {
+  list-style: none;
+  padding: 0;
+}
+
+.tech-types li {
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.tech-types li::before {
+  content: "•";
+  color: #b21f1f;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+
+.tech-types strong {
+  color: #333;
+  font-weight: 600;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .magazine-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-number {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-content {
+    font-size: 1rem;
+  }
+}
+
+/* 杂志页面容器 */
+.magazine-pages {
+  position: relative;
+  width: 100%;
+  height: 600px; /* 固定高度，可以根据需要调整 */
+  overflow: hidden;
+}
+
+.magazine-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease;
+  background: #fff;
+  padding: 2rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.magazine-page.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.magazine-page.prev {
+  transform: translateX(-100%);
+}
+
+.magazine-page.next {
+  transform: translateX(100%);
+}
+
+/* 翻页控制样式 */
+.page-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.page-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #b21f1f;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.page-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-btn:hover:not(:disabled) {
+  transform: scale(1.2);
+}
+
+.page-indicator {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* 修改现有的magazine-page样式 */
+.magazine-page {
+  margin: 0;
+  box-shadow: none;
+}
+
+/* 文章模块样式 */
+.articles-grid {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.article-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+}
+
+.article-content {
+  padding: 1.5rem;
+}
+
+.article-content h3 {
+  font-size: 1.4rem;
   margin-bottom: 1rem;
   color: #333;
 }
