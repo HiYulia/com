@@ -4,15 +4,17 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector("header");
   let lastScroll = 0;
 
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      header.style.transform = "translateY(-100%)";
-    } else {
-      header.style.transform = "translateY(0)";
-    }
-    lastScroll = currentScroll;
-  });
+  if (header) {
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        header.style.transform = "translateY(-100%)";
+      } else {
+        header.style.transform = "translateY(0)";
+      }
+      lastScroll = currentScroll;
+    });
+  }
 
   // 平滑滚动
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
