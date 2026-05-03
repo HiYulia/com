@@ -11,108 +11,119 @@
     />
   </head>
   <body>
-    <div class="hero">
-      <h1>Yulia Niu</h1>
-      <p class="slogan">Creativity Generates Values</p>
-      <div class="profile-image">
-        <img src="images/profile.jpg" alt="Yulia Niu" id="profile-pic" loading="lazy" />
+    <nav class="navbar">
+      <div class="nav-inner">
+        <span class="nav-brand">Yulia Niu</span>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#articles">Insights</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
+
+    <section class="hero" id="about">
+      <div class="hero-inner">
+        <div class="avatar-wrap">
+          <img src="images/profile.jpg" alt="Yulia Niu" loading="lazy" />
+        </div>
+        <h1>Yulia Niu</h1>
+        <p class="tagline">Creativity Generates Values</p>
+      </div>
+    </section>
 
     <main>
-      <section id="articles">
-        <h2>Insights/观点</h2>
-        <div class="articles-grid">
-          <div class="article-card">
-            <div class="article-content">
-              <a
-                href="https://www.jianshu.com/u/71bca0535643"
-                target="_blank"
-                rel="noopener"
-                class="article-link"
-              >
-                <div class="platform-wrapper">
-                  <div class="platform-icon">
-                    <i class="fas fa-book"></i>
-                  </div>
-                  <span class="platform-name">简书</span>
-                </div>
-              </a>
+      <section id="articles" class="section">
+        <div class="section-header">
+          <p class="eyebrow">Writing</p>
+          <h2>Insights</h2>
+          <p class="section-sub">Thoughts on technology, data, and beyond.</p>
+        </div>
+        <div class="platform-grid">
+          <a
+            href="https://www.jianshu.com/u/71bca0535643"
+            target="_blank"
+            rel="noopener"
+            class="platform-card"
+          >
+            <div class="platform-icon-wrap">
+              <i class="fas fa-book"></i>
             </div>
-          </div>
-          <div class="article-card">
-            <div class="article-content">
-              <a
-                href="https://substack.com/@yulianiu"
-                target="_blank"
-                rel="noopener"
-                class="article-link"
-              >
-                <div class="platform-wrapper">
-                  <div class="platform-icon">
-                    <i class="fas fa-newspaper"></i>
-                  </div>
-                  <span class="platform-name">Substack</span>
-                </div>
-              </a>
+            <span class="platform-label">简书</span>
+            <span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
+          </a>
+          <a
+            href="https://substack.com/@yulianiu"
+            target="_blank"
+            rel="noopener"
+            class="platform-card"
+          >
+            <div class="platform-icon-wrap">
+              <i class="fas fa-newspaper"></i>
             </div>
-          </div>
+            <span class="platform-label">Substack</span>
+            <span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
+          </a>
         </div>
       </section>
 
-      <section id="projects">
-        <h2>Projects/项目</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Graduate/研究生</h3>
-              <a
-                href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases"
-                target="_blank"
-                rel="noopener"
-                class="project-link"
-              >
-                Details
-              </a>
-            </div>
-          </div>
-          <div class="project-card">
-            <div class="project-content">
-              <h3>undergraduate/本科</h3>
-              <a
-                href="https://xyniu0829.wixsite.com/yulia/blank-q17v5"
-                target="_blank"
-                rel="noopener"
-                class="project-link"
-              >
-                Details
-              </a>
-            </div>
-          </div>
+      <section id="projects" class="section section-alt">
+        <div class="section-header">
+          <p class="eyebrow">Work</p>
+          <h2>Projects</h2>
+          <p class="section-sub">Research and engineering across graduate and undergraduate study.</p>
         </div>
-      </section>
-
-      <section id="contact">
-        <h2>Contact Me/联系我</h2>
-        <div class="contact-info">
-          <div class="contact-icons">
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-tag">Graduate</div>
+            <h3>研究生项目</h3>
+            <p class="project-desc">Data science and machine learning research projects from graduate studies.</p>
             <a
-              href="mailto:yulianiu@outlook.com"
-              class="contact-link icon-link"
-            >
-              <i class="fas fa-envelope"></i>
-              <span class="tooltip">yulianiu@outlook.com</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yulianiu"
+              href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases"
               target="_blank"
               rel="noopener"
-              class="contact-link icon-link"
+              class="card-link"
             >
-              <i class="fab fa-linkedin"></i>
-              <span class="tooltip">LinkedIn</span>
+              View Details <i class="fas fa-arrow-right"></i>
             </a>
           </div>
+          <div class="project-card">
+            <div class="project-tag">Undergraduate</div>
+            <h3>本科项目</h3>
+            <p class="project-desc">Engineering and analytical projects from undergraduate study.</p>
+            <a
+              href="https://xyniu0829.wixsite.com/yulia/blank-q17v5"
+              target="_blank"
+              rel="noopener"
+              class="card-link"
+            >
+              View Details <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="section-header">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Contact</h2>
+          <p class="section-sub">Let's connect and build something together.</p>
+        </div>
+        <div class="contact-row">
+          <a href="mailto:yulianiu@outlook.com" class="contact-chip">
+            <i class="fas fa-envelope"></i>
+            <span>yulianiu@outlook.com</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yulianiu"
+            target="_blank"
+            rel="noopener"
+            class="contact-chip"
+          >
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
         </div>
       </section>
     </main>
@@ -120,6 +131,7 @@
     <footer>
       <p>&copy; 2025 Yulia Niu. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

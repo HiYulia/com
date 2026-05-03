@@ -1,60 +1,41 @@
-// 页面滚动动画
 document.addEventListener("DOMContentLoaded", () => {
-  // 平滑滚动
+  // Section fade-in on scroll
+  const sections = document.querySelectorAll(".section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  sections.forEach((s) => observer.observe(s));
+
+  // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (!target) return;
       e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
+      target.scrollIntoView({ behavior: "smooth" });
     });
   });
-
-  // 页面元素淡入效果
-  const sections = document.querySelectorAll("section");
-
-  const fadeInOnScroll = () => {
-    sections.forEach((section) => {
-      const sectionTop = section.getBoundingClientRect().top;
-      const windowHeight = window.innerHeight;
-
-      if (sectionTop < windowHeight * 0.75) {
-        section.style.opacity = "1";
-        section.style.transform = "translateY(0)";
-      }
-    });
-  };
-
-  // 初始化sections的样式
-  sections.forEach((section) => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(20px)";
-    section.style.transition = "all 0.5s ease-in-out";
-  });
-
-  // 监听滚动事件
-  window.addEventListener("scroll", fadeInOnScroll);
-  // 初始加载时也执行一次
-  fadeInOnScroll();
 });
 
-// 添加打字机效果
-const typeWriter = (element, text, speed = 100) => {
-  let i = 0;
-  element.innerHTML = "";
-  const timer = setInterval(() => {
-    if (i < text.length) {
-      element.innerHTML += text.charAt(i);
-      i++;
-    } else {
-      clearInterval(timer);
-    }
-  }, speed);
-};
-
-// 页面加载完成后执行打字机效果
+// Typewriter effect for tagline
 window.addEventListener("load", () => {
-  const slogan = document.querySelector(".slogan");
-  const originalText = slogan.innerHTML;
-  typeWriter(slogan, originalText);
+  const tagline = document.querySelector(".tagline");
+  if (!tagline) return;
+  const text = tagline.textContent;
+  tagline.textContent = "";
+  let i = 0;
+  const timer = setInterval(() => {
+    tagline.textContent += text[i++];
+    if (i >= text.length) clearInterval(timer);
+  }, 60);
 });
