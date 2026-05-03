@@ -1,19 +1,5 @@
 // 页面滚动动画
 document.addEventListener("DOMContentLoaded", () => {
-  // 导航栏滚动效果
-  const header = document.querySelector("header");
-  let lastScroll = 0;
-
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll > lastScroll && currentScroll > 100) {
-      header.style.transform = "translateY(-100%)";
-    } else {
-      header.style.transform = "translateY(0)";
-    }
-    lastScroll = currentScroll;
-  });
-
   // 平滑滚动
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {

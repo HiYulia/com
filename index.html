@@ -9,105 +9,20 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <style>
-      .articles-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 4rem;
-        margin: 2rem auto;
-        max-width: 1200px;
-        padding: 0 2rem;
-      }
-
-      .article-card {
-        flex: 0 1 auto;
-        width: 220px;
-      }
-
-      .platform-wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
-        border-radius: 10px;
-        width: 100%;
-        min-height: 160px;
-        box-sizing: border-box;
-        background-color: #ffffff;
-        border: 1px solid #eaeaea;
-        transition: all 0.2s ease-out;
-      }
-
-      .platform-icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        background-color: #f8f8f8;
-        margin-bottom: 1.2rem;
-        transition: all 0.2s ease-out;
-      }
-
-      .fa-medium {
-        font-size: 2.5rem;
-      }
-
-      .fa-book {
-        font-size: 2rem;
-      }
-
-      .fa-newspaper {
-        font-size: 2rem;
-      }
-
-      .platform-name {
-        font-size: 1.1rem;
-        color: #555;
-        font-weight: 500;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        transition: all 0.2s ease-out;
-        white-space: nowrap;
-      }
-
-      .platform-wrapper:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
-        border-color: #e0e0e0;
-        background-color: #fafafa;
-      }
-
-      .platform-wrapper:hover .platform-icon {
-        background-color: #ffffff;
-        color: #000;
-      }
-
-      .platform-wrapper:hover .platform-name {
-        color: #333;
-      }
-
-      .article-link {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
     <div class="hero">
       <h1>Yulia Niu</h1>
       <p class="slogan">Creativity Generates Values</p>
       <div class="profile-image">
-        <img src="images/profile.jpg" alt="Yulia Niu" id="profile-pic" />
+        <img src="images/profile.jpg" alt="Yulia Niu" id="profile-pic" loading="lazy" />
       </div>
     </div>
 
     <main>
       <section id="articles">
         <h2>Insights/观点</h2>
+        <div class="articles-grid">
           <div class="article-card">
             <div class="article-content">
               <a
@@ -203,7 +118,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Yulia Niu. All rights reserved.</p>
+      <p>&copy; 2025 Yulia Niu. All rights reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
