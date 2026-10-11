@@ -1,134 +1,113 @@
 <!DOCTYPE html>
-<html lang="zh">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yulia Niu</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-  <style>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yulia Niu</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<style>
 .work-shell{max-width:1100px;margin:auto}.work-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}.work-heading .section-sub{margin:0;text-align:left}.work-heading h2{margin-bottom:12px}.work-nav{display:flex;gap:10px;align-items:center;white-space:nowrap}.work-nav>span{font-size:12px;color:var(--text-secondary);margin-right:8px}.work-nav button{width:44px;height:44px;border:1px solid var(--border);border-radius:50%;background:white;font-size:20px;cursor:pointer;color:var(--text-primary)}.work-nav button:disabled{opacity:.3;cursor:default}.work-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:0;padding:4px 4px 24px;scrollbar-width:thin;scrollbar-color:#c6cbd0 transparent;overscroll-behavior-x:contain}.work-card{flex:0 0 calc((100% - 24px)/2);min-width:0;scroll-snap-align:start;background:white;border:1px solid var(--border);border-radius:22px;overflow:hidden;box-shadow:0 4px 20px #00000004;display:flex;flex-direction:column}.work-art{height:165px;position:relative;display:grid;place-items:center;overflow:hidden}.work-art>span{font-size:72px;z-index:1;font-weight:400;transform:rotate(-12deg)}.phone{background:#ede9df;color:#476b57}.weekend{background:#e4eddf;color:#528464}.graduate{background:#e2eaf5;color:#53739b}.undergrad{background:#efe6df;color:#926e51}.art-orbit{position:absolute;width:240px;height:240px;border:1px solid currentColor;border-radius:50%;opacity:.18;right:-40px;top:20px}.work-body{padding:24px 28px;display:flex;flex-direction:column;flex:1}.work-meta{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:var(--text-secondary);letter-spacing:.02em;margin-bottom:16px}.work-body h3{font-size:23px;letter-spacing:-.03em;margin-bottom:10px}.work-description{font-size:15px;color:var(--text-secondary);line-height:1.7;min-height:52px}.work-english{font-size:12px;color:#85858b;line-height:1.6;margin-top:8px;min-height:39px}.work-link{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);margin-top:24px;padding-top:16px;color:var(--accent);font-size:14px;font-weight:600;text-decoration:none}.work-note{font-size:11px;color:var(--text-secondary);margin-top:10px}.work-footer{display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin-top:8px}.work-track:focus-visible,.work-nav button:focus-visible,.work-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(min-width:1000px){.work-card{flex-basis:calc((100% - 48px)/2.4)}}@media(max-width:640px){.work-heading{align-items:flex-start}.work-nav>span{display:none}.work-nav{gap:6px}.work-card{flex-basis:88%}.work-track{gap:16px}.work-art{height:140px}.work-body{padding:21px}.work-heading h2{font-size:32px}.work-heading .section-sub{font-size:14px}.work-description{min-height:0}.work-english{min-height:0}.work-meta{font-size:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section{transition:none}}
+
+.section{opacity:1;transform:none;scroll-margin-top:100px}.navbar{height:68px}.nav-inner{max-width:1100px;gap:24px}.nav-brand{text-decoration:none;white-space:nowrap}.nav-links{margin-left:auto;gap:24px}.language-switch{display:flex;padding:3px;border:1px solid var(--border);border-radius:30px;gap:2px;flex-shrink:0}.language-switch button{border:0;background:transparent;color:var(--text-secondary);border-radius:24px;padding:7px 11px;cursor:pointer;font:inherit;font-size:12px}.language-switch button[aria-pressed=true]{background:var(--text-primary);color:white}.hero{padding:130px 22px 80px;background:radial-gradient(ellipse at 50% 0%,#edf2f8,white 70%)}.hero-intro{max-width:490px;margin:20px auto;color:var(--text-secondary);font-size:16px;line-height:1.8}.hero-cta{display:inline-flex;padding:12px 22px;margin-top:8px;background:var(--text-primary);border-radius:30px;color:white;text-decoration:none;font-size:14px}.tagline{min-height:30px}.section{padding:76px 22px}.section-header{margin-bottom:32px}.platform-grid{max-width:760px}.platform-description{font-size:13px;color:var(--text-secondary);text-align:center}.platform-card{box-shadow:none}.contact-chip{box-shadow:none}.work-description{min-height:84px}.work-link{margin-top:auto;padding-top:16px}.work-note{min-height:34px}.work-body{gap:8px}.skip-link{position:fixed;top:-100px;left:12px;z-index:200;background:white;padding:12px}.skip-link:focus{top:12px}a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:4px}footer{color:var(--text-secondary)}@media(max-width:640px){.navbar{height:auto}.nav-inner{flex-wrap:wrap;gap:8px;padding:10px 20px}.nav-brand{order:0}.language-switch{order:1;margin-left:auto}.nav-links{order:2;flex-basis:100%;margin:0;justify-content:space-between;gap:12px}.nav-links a{display:block;padding:4px 0}.hero{padding-top:150px;padding-bottom:56px}.section{padding:56px 20px;scroll-margin-top:120px}.platform-grid{flex-direction:row;gap:12px;max-width:100%}.platform-card{padding:22px 12px}.work-heading{flex-wrap:wrap;gap:16px}.work-description{min-height:84px}.contact-chip{max-width:100%;font-size:13px}.hero-intro{font-size:15px}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
 </style>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="nav-inner">
-        <span class="nav-brand">Yulia Niu</span>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#articles">Insights</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+<meta content="Yulia Niu 的个人作品集：互动产品、数据科学项目与写作。Portfolio of interactive products, data science and writing." name="description"/></head>
+<body><a class="skip-link" data-en="Skip to work" data-zh="跳到作品" href="#projects">跳到作品</a>
+<nav class="navbar">
+<div class="nav-inner">
+<a class="nav-brand" href="#about">Yulia Niu</a>
+<ul class="nav-links">
+<li><a data-en="About" data-zh="关于" href="#about">关于</a></li>
+<li><a data-en="Writing" data-zh="写作" href="#articles">写作</a></li>
+<li><a data-en="Work" data-zh="作品" href="#projects">作品</a></li>
+<li><a data-en="Contact" data-zh="联系" href="#contact">联系</a></li>
+</ul>
+<div aria-label="Language / 语言" class="language-switch" role="group"><button aria-pressed="true" data-language="zh" type="button">中文</button><button aria-pressed="false" data-language="en" type="button">EN</button></div></div>
+</nav>
+<section class="hero" id="about">
+<div class="hero-inner">
+<div class="avatar-wrap">
+<img alt="Yulia Niu" loading="eager" src="images/profile.jpg"/>
+</div>
+<h1>Yulia Niu</h1>
+<p class="tagline" data-en="Creativity creates value." data-zh="让创意产生价值。">让创意产生价值。</p>
+<p class="hero-intro" data-en="Exploring where data, technology and everyday life meet — turning ideas into experiences." data-zh="探索数据、技术与日常生活的交点，把想法变成可以体验的作品。">探索数据、技术与日常生活的交点，把想法变成可以体验的作品。</p><a class="hero-cta" data-en="Explore my work ↓" data-zh="浏览我的作品 ↓" href="#projects">浏览我的作品 ↓</a></div>
+</section>
+<main>
+<section class="section" id="articles">
+<div class="section-header">
+<p class="eyebrow" data-en="Notes &amp; reflections" data-zh="记录与思考">记录与思考</p>
+<h2 data-en="Writing &amp; ideas" data-zh="写作与分享">写作与分享</h2>
+<p class="section-sub" data-en="Thoughts on technology, data and discoveries in everyday life." data-zh="关于技术、数据，以及生活中的新发现。">关于技术、数据，以及生活中的新发现。</p>
+</div>
+<div class="platform-grid">
+<a class="platform-card" href="https://www.jianshu.com/u/71bca0535643" rel="noopener" target="_blank">
+<div class="platform-icon-wrap">
+<i class="fas fa-book"></i>
+</div>
+<span class="platform-label" data-en="Jianshu" data-zh="简书">简书</span><span class="platform-description" data-en="Essays and ideas in Chinese" data-zh="中文随笔与想法">中文随笔与想法</span>
+<span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
+</a>
+<a class="platform-card" href="https://substack.com/@yulianiu" rel="noopener" target="_blank">
+<div class="platform-icon-wrap">
+<i class="fas fa-newspaper"></i>
+</div>
+<span class="platform-label" data-en="Substack" data-zh="Substack">Substack</span><span class="platform-description" data-en="More writing and reflections" data-zh="更多文章与分享">更多文章与分享</span>
+<span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
+</a>
+</div>
+</section>
+<section class="section section-alt" id="projects">
+<div class="work-shell">
+<div class="work-heading">
+<div><p class="eyebrow" data-en="Selected work" data-zh="精选作品">精选作品</p><h2 data-en="Work &amp; experiments" data-zh="作品与探索">作品与探索</h2><p class="section-sub" data-en="From recent experiments to earlier explorations." data-zh="从最近的尝试，到一路积累的探索。">从最近的尝试，到一路积累的探索。</p></div>
+<div class="work-nav"><span data-en="Newest → earlier" data-zh="最新 → 更早">最新 → 更早</span><button aria-controls="work-track" aria-label="查看较新的作品" id="work-prev" type="button">←</button><button aria-controls="work-track" aria-label="查看较早的作品" id="work-next" type="button">→</button></div>
+</div>
+<div aria-label="作品时间线，按左右方向键或滑动浏览" class="work-track" id="work-track" role="region" tabindex="0">
+<article class="work-card">
+<div aria-hidden="true" class="work-art phone"><span>◫</span><div class="art-orbit"></div></div>
+<div class="work-body"><div class="work-meta"><span data-en="Interactive prototype" data-zh="互动原型">互动原型</span><span>2026.10</span></div><h3 data-en="Phone Choice Theater" data-zh="选机小剧场">选机小剧场</h3><p class="work-description" data-en="Choose a phone through everyday scenarios. Understand the trade-offs between budget, photography and comfort." data-zh="用生活场景表达需求，看懂预算、拍摄与手感之间的取舍。">用生活场景表达需求，看懂预算、拍摄与手感之间的取舍。</p><a class="work-link" data-en="Try the prototype ↗" data-zh="体验作品 ↗" href="https://phone-choice-theater.vercel.app" rel="noopener" target="_blank">体验作品 ↗</a><p class="work-note" data-en="Prototype · Authorized Vercel sign-in required" data-zh="试用版 · 需 Vercel 授权登录">试用版 · 需 Vercel 授权登录</p></div>
+</article>
+<article class="work-card">
+<div aria-hidden="true" class="work-art weekend"><span>✳</span><div class="art-orbit"></div></div>
+<div class="work-body"><div class="work-meta"><span data-en="Interactive web app" data-zh="互动网页">互动网页</span><span>2026.10</span></div><h3 data-en="Weekend Inspiration Box" data-zh="周末灵感盒子">周末灵感盒子</h3><p class="work-description" data-en="Discover a weekend idea that fits your mood, time and budget." data-zh="按心情、时间和预算，抽取一个值得期待的周末点子。">按心情、时间和预算，抽取一个值得期待的周末点子。</p><a class="work-link" data-en="Find an idea ↗" data-zh="打开灵感盒子 ↗" href="https://weekend-inspiration-box.vercel.app" rel="noopener" target="_blank">打开灵感盒子 ↗</a><p class="work-note" data-en="Authorized Vercel sign-in required" data-zh="需 Vercel 授权登录">需 Vercel 授权登录</p></div>
+</article>
+<article class="work-card">
+<div aria-hidden="true" class="work-art graduate"><span>∿</span><div class="art-orbit"></div></div>
+<div class="work-body"><div class="work-meta"><span data-en="Graduate collection" data-zh="研究生作品集">研究生作品集</span><span>2018–2019</span></div><h3 data-en="Graduate Projects" data-zh="研究生项目">研究生项目</h3><p class="work-description" data-en="Explore data science and machine learning projects from graduate studies." data-zh="探索数据科学与机器学习，把数据分析转化为实际决策。">探索数据科学与机器学习，把数据分析转化为实际决策。</p><a class="work-link" data-en="View collection ↗" data-zh="查看项目集 ↗" href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases" rel="noopener" target="_blank">查看项目集 ↗</a><p class="work-note" data-en="Graduate project collection" data-zh="研究生阶段作品集">研究生阶段作品集</p></div>
+</article>
+<article class="work-card">
+<div aria-hidden="true" class="work-art undergrad"><span>⌘</span><div class="art-orbit"></div></div>
+<div class="work-body"><div class="work-meta"><span data-en="Undergraduate collection" data-zh="本科作品集">本科作品集</span><span>2013–2017</span></div><h3 data-en="Undergraduate Projects" data-zh="本科项目">本科项目</h3><p class="work-description" data-en="Engineering and analytical projects exploring analysis, design and practical applications." data-zh="从工程问题出发，探索分析、设计与实践。">从工程问题出发，探索分析、设计与实践。</p><a class="work-link" data-en="View collection ↗" data-zh="查看项目集 ↗" href="https://xyniu0829.wixsite.com/yulia/blank-q17v5" rel="noopener" target="_blank">查看项目集 ↗</a><p class="work-note" data-en="Undergraduate project collection" data-zh="本科阶段作品集">本科阶段作品集</p></div>
+</article>
+</div>
+<div class="work-footer"><span data-en="Swipe or use the arrows to explore the timeline." data-zh="左右滑动，沿时间线浏览作品">左右滑动，沿时间线浏览作品</span><span aria-live="polite" id="work-position">1 / 4</span></div>
+</div>
+</section>
+<section class="section" id="contact">
+<div class="section-header">
+<p class="eyebrow" data-en="Get in touch" data-zh="保持联系">保持联系</p>
+<h2 data-en="Let’s connect" data-zh="一起聊聊">一起聊聊</h2>
+<p class="section-sub" data-en="Share an idea, send feedback, or explore something new together." data-zh="欢迎交流想法、反馈，或一起探索新的可能。">欢迎交流想法、反馈，或一起探索新的可能。</p>
+</div>
+<div class="contact-row">
+<a class="contact-chip" href="mailto:yulianiu@outlook.com">
+<i class="fas fa-envelope"></i>
+<span>yulianiu@outlook.com</span>
+</a>
+<a class="contact-chip" href="https://www.linkedin.com/in/yulianiu" rel="noopener" target="_blank">
+<i class="fab fa-linkedin"></i>
+<span>LinkedIn</span>
+</a>
+</div>
+</section>
+</main>
+<footer>
+<p data-en="© 2026 Yulia Niu. All rights reserved." data-zh="© 2026 Yulia Niu. 保留所有权利。">© 2026 Yulia Niu. 保留所有权利。</p>
+</footer>
 
-    <section class="hero" id="about">
-      <div class="hero-inner">
-        <div class="avatar-wrap">
-          <img src="images/profile.jpg" alt="Yulia Niu" loading="lazy" />
-        </div>
-        <h1>Yulia Niu</h1>
-        <p class="tagline">Creativity Generates Values</p>
-      </div>
-    </section>
-
-    <main>
-      <section id="articles" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Writing</p>
-          <h2>Insights</h2>
-          <p class="section-sub">Thoughts on technology, data, and beyond.</p>
-        </div>
-        <div class="platform-grid">
-          <a
-            href="https://www.jianshu.com/u/71bca0535643"
-            target="_blank"
-            rel="noopener"
-            class="platform-card"
-          >
-            <div class="platform-icon-wrap">
-              <i class="fas fa-book"></i>
-            </div>
-            <span class="platform-label">简书</span>
-            <span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
-          </a>
-          <a
-            href="https://substack.com/@yulianiu"
-            target="_blank"
-            rel="noopener"
-            class="platform-card"
-          >
-            <div class="platform-icon-wrap">
-              <i class="fas fa-newspaper"></i>
-            </div>
-            <span class="platform-label">Substack</span>
-            <span class="platform-arrow"><i class="fas fa-arrow-right"></i></span>
-          </a>
-        </div>
-      </section>
-
-      <section id="projects" class="section section-alt">
-        <div class="work-shell">
-          <div class="work-heading">
-            <div><p class="eyebrow">Selected work</p><h2>Projects</h2><p class="section-sub">从最近的尝试，到一路积累的探索。</p></div>
-            <div class="work-nav"><span>最新 → 更早</span><button type="button" id="work-prev" aria-label="查看较新的作品" aria-controls="work-track">←</button><button type="button" id="work-next" aria-label="查看较早的作品" aria-controls="work-track">→</button></div>
-          </div>
-          <div class="work-track" id="work-track" tabindex="0" role="region" aria-label="作品时间线，按左右方向键或滑动浏览">
-            <article class="work-card">
-              <div class="work-art phone" aria-hidden="true"><span>◫</span><div class="art-orbit"></div></div>
-              <div class="work-body"><div class="work-meta"><span>Interactive prototype</span><span>2026.10</span></div><h3>选机小剧场</h3><p class="work-description">用生活场景表达需求，看懂预算、拍摄与手感之间的取舍。</p><p class="work-english">Phone selection through everyday scenarios and clear trade-offs.</p><a href="https://phone-choice-theater.vercel.app" target="_blank" rel="noopener" class="work-link">体验作品 <span aria-hidden="true">↗</span></a><p class="work-note">试用版 · 需 Vercel 授权登录</p></div>
-            </article>
-            <article class="work-card">
-              <div class="work-art weekend" aria-hidden="true"><span>✳</span><div class="art-orbit"></div></div>
-              <div class="work-body"><div class="work-meta"><span>Interactive web app</span><span>2026.10</span></div><h3>周末灵感盒子</h3><p class="work-description">按心情、时间和预算，抽取一个值得期待的周末点子。</p><p class="work-english">Small adventures, matched to your mood, time and budget.</p><a href="https://weekend-inspiration-box.vercel.app" target="_blank" rel="noopener" class="work-link">打开灵感盒子 <span aria-hidden="true">↗</span></a><p class="work-note">需 Vercel 授权登录</p></div>
-            </article>
-            <article class="work-card">
-              <div class="work-art graduate" aria-hidden="true"><span>∿</span><div class="art-orbit"></div></div>
-              <div class="work-body"><div class="work-meta"><span>Graduate collection</span><span>2018–2019</span></div><h3>研究生项目</h3><p class="work-description">探索数据科学与机器学习，把数据分析转化为实际决策。</p><p class="work-english">Data science and machine learning from graduate studies.</p><a href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases" target="_blank" rel="noopener" class="work-link">查看项目集 <span aria-hidden="true">↗</span></a><p class="work-note">研究生阶段作品集</p></div>
-            </article>
-            <article class="work-card">
-              <div class="work-art undergrad" aria-hidden="true"><span>⌘</span><div class="art-orbit"></div></div>
-              <div class="work-body"><div class="work-meta"><span>Undergraduate collection</span><span>2013–2017</span></div><h3>本科项目</h3><p class="work-description">从工程问题出发，探索分析、设计与实践。</p><p class="work-english">Engineering and analytical projects from undergraduate studies.</p><a href="https://xyniu0829.wixsite.com/yulia/blank-q17v5" target="_blank" rel="noopener" class="work-link">查看项目集 <span aria-hidden="true">↗</span></a><p class="work-note">本科阶段作品集</p></div>
-            </article>
-          </div>
-          <div class="work-footer"><span>左右滑动，沿时间线浏览作品</span><span id="work-position" aria-live="polite">1 / 4</span></div>
-        </div>
-      </section>
-
-      <section id="contact" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Get in touch</p>
-          <h2>Contact</h2>
-          <p class="section-sub">Let's connect and build something together.</p>
-        </div>
-        <div class="contact-row">
-          <a href="mailto:yulianiu@outlook.com" class="contact-chip">
-            <i class="fas fa-envelope"></i>
-            <span>yulianiu@outlook.com</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/yulianiu"
-            target="_blank"
-            rel="noopener"
-            class="contact-chip"
-          >
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2025 Yulia Niu. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
+<script>
     (() => {
       const track=document.getElementById('work-track'), prev=document.getElementById('work-prev'), next=document.getElementById('work-next'), cards=Array.from(track.children);
       const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -139,5 +118,22 @@
       track.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
     })();
     </script>
-  </body>
+<script>
+(() => {
+ const buttons=document.querySelectorAll('[data-language]');
+ function setLanguage(lang){
+  lang=lang==='en'?'en':'zh';
+  document.documentElement.lang=lang==='en'?'en':'zh-CN';
+  document.querySelectorAll('[data-zh][data-en]').forEach(el=>el.textContent=el.dataset[lang]);
+  buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===lang)));
+  const labels=lang==='en'?['View newer work','View earlier work','Project timeline. Swipe or use left and right arrow keys.']:['查看较新的作品','查看较早的作品','作品时间线，按左右方向键或滑动浏览'];
+  ['work-prev','work-next','work-track'].forEach((id,i)=>document.getElementById(id).setAttribute('aria-label',labels[i]));
+  try{localStorage.setItem('portfolio-language',lang)}catch{}
+ }
+ let initial=navigator.language.toLowerCase().startsWith('zh')?'zh':'en';
+ try{initial=localStorage.getItem('portfolio-language')||initial}catch{}
+ buttons.forEach(b=>b.addEventListener('click',()=>setLanguage(b.dataset.language)));
+ setLanguage(initial);
+})();
+</script></body>
 </html>
