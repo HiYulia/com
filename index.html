@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+  <style>
+.work-shell{max-width:1100px;margin:auto}.work-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:30px}.work-heading .section-sub{margin:0;text-align:left}.work-heading h2{margin-bottom:12px}.work-nav{display:flex;gap:10px;align-items:center;white-space:nowrap}.work-nav>span{font-size:12px;color:var(--text-secondary);margin-right:8px}.work-nav button{width:44px;height:44px;border:1px solid var(--border);border-radius:50%;background:white;font-size:20px;cursor:pointer;color:var(--text-primary)}.work-nav button:disabled{opacity:.3;cursor:default}.work-track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:0;padding:4px 4px 24px;scrollbar-width:thin;scrollbar-color:#c6cbd0 transparent;overscroll-behavior-x:contain}.work-card{flex:0 0 calc((100% - 24px)/2);min-width:0;scroll-snap-align:start;background:white;border:1px solid var(--border);border-radius:22px;overflow:hidden;box-shadow:0 4px 20px #00000004;display:flex;flex-direction:column}.work-art{height:165px;position:relative;display:grid;place-items:center;overflow:hidden}.work-art>span{font-size:72px;z-index:1;font-weight:400;transform:rotate(-12deg)}.phone{background:#ede9df;color:#476b57}.weekend{background:#e4eddf;color:#528464}.graduate{background:#e2eaf5;color:#53739b}.undergrad{background:#efe6df;color:#926e51}.art-orbit{position:absolute;width:240px;height:240px;border:1px solid currentColor;border-radius:50%;opacity:.18;right:-40px;top:20px}.work-body{padding:24px 28px;display:flex;flex-direction:column;flex:1}.work-meta{display:flex;justify-content:space-between;gap:10px;font-size:11px;color:var(--text-secondary);letter-spacing:.02em;margin-bottom:16px}.work-body h3{font-size:23px;letter-spacing:-.03em;margin-bottom:10px}.work-description{font-size:15px;color:var(--text-secondary);line-height:1.7;min-height:52px}.work-english{font-size:12px;color:#85858b;line-height:1.6;margin-top:8px;min-height:39px}.work-link{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border);margin-top:24px;padding-top:16px;color:var(--accent);font-size:14px;font-weight:600;text-decoration:none}.work-note{font-size:11px;color:var(--text-secondary);margin-top:10px}.work-footer{display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin-top:8px}.work-track:focus-visible,.work-nav button:focus-visible,.work-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px}@media(min-width:1000px){.work-card{flex-basis:calc((100% - 48px)/2.4)}}@media(max-width:640px){.work-heading{align-items:flex-start}.work-nav>span{display:none}.work-nav{gap:6px}.work-card{flex-basis:88%}.work-track{gap:16px}.work-art{height:140px}.work-body{padding:21px}.work-heading h2{font-size:32px}.work-heading .section-sub{font-size:14px}.work-description{min-height:0}.work-english{min-height:0}.work-meta{font-size:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.section{transition:none}}
+</style>
   </head>
   <body>
     <nav class="navbar">
@@ -69,63 +72,30 @@
       </section>
 
       <section id="projects" class="section section-alt">
-        <div class="section-header">
-          <p class="eyebrow">Work</p>
-          <h2>Projects</h2>
-          <p class="section-sub">Interactive experiments, research, and engineering projects.</p>
-        </div>
-        <div class="project-grid">
-          <div class="project-card">
-            <div class="project-tag">Interactive Prototype</div>
-            <h3>选机小剧场</h3>
-            <p class="project-desc">A visual phone chooser for non-experts. Explore everyday scenarios, adjust priorities, and compare the trade-offs between real phones.</p>
-            <p class="project-desc">用漫画场景表达需求，通过预算和偏好调整候选，比较两款手机的取舍。当前为试用版，机型覆盖及推荐规则仍在完善。</p>
-            <a href="https://phone-choice-theater.vercel.app" target="_blank" rel="noopener" class="card-link">
-              Try Phone Theater <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <p class="project-desc">Demo access requires an authorized Vercel account. Prices are reference prices.</p>
+        <div class="work-shell">
+          <div class="work-heading">
+            <div><p class="eyebrow">Selected work</p><h2>Projects</h2><p class="section-sub">从最近的尝试，到一路积累的探索。</p></div>
+            <div class="work-nav"><span>最新 → 更早</span><button type="button" id="work-prev" aria-label="查看较新的作品" aria-controls="work-track">←</button><button type="button" id="work-next" aria-label="查看较早的作品" aria-controls="work-track">→</button></div>
           </div>
-          <div class="project-card">
-            <div class="project-tag">Interactive Web App</div>
-            <h3>周末灵感盒子</h3>
-            <p class="project-desc">A playful weekend idea generator. Filter 16 activities by mood, time, and budget, draw a random idea, and save your favorites.</p>
-            <p class="project-desc">按心情、时间与预算发现周末灵感，随机抽签，收藏喜欢的小体验。</p>
-            <a
-              href="https://weekend-inspiration-box.vercel.app"
-              target="_blank"
-              rel="noopener"
-              class="card-link"
-            >
-              Try Weekend Box <i class="fas fa-arrow-right" aria-hidden="true"></i>
-            </a>
-            <p class="project-desc">Demo access requires an authorized Vercel account.</p>
+          <div class="work-track" id="work-track" tabindex="0" role="region" aria-label="作品时间线，按左右方向键或滑动浏览">
+            <article class="work-card">
+              <div class="work-art phone" aria-hidden="true"><span>◫</span><div class="art-orbit"></div></div>
+              <div class="work-body"><div class="work-meta"><span>Interactive prototype</span><span>2026.10</span></div><h3>选机小剧场</h3><p class="work-description">用生活场景表达需求，看懂预算、拍摄与手感之间的取舍。</p><p class="work-english">Phone selection through everyday scenarios and clear trade-offs.</p><a href="https://phone-choice-theater.vercel.app" target="_blank" rel="noopener" class="work-link">体验作品 <span aria-hidden="true">↗</span></a><p class="work-note">试用版 · 需 Vercel 授权登录</p></div>
+            </article>
+            <article class="work-card">
+              <div class="work-art weekend" aria-hidden="true"><span>✳</span><div class="art-orbit"></div></div>
+              <div class="work-body"><div class="work-meta"><span>Interactive web app</span><span>2026.10</span></div><h3>周末灵感盒子</h3><p class="work-description">按心情、时间和预算，抽取一个值得期待的周末点子。</p><p class="work-english">Small adventures, matched to your mood, time and budget.</p><a href="https://weekend-inspiration-box.vercel.app" target="_blank" rel="noopener" class="work-link">打开灵感盒子 <span aria-hidden="true">↗</span></a><p class="work-note">需 Vercel 授权登录</p></div>
+            </article>
+            <article class="work-card">
+              <div class="work-art graduate" aria-hidden="true"><span>∿</span><div class="art-orbit"></div></div>
+              <div class="work-body"><div class="work-meta"><span>Graduate collection</span><span>2018–2019</span></div><h3>研究生项目</h3><p class="work-description">探索数据科学与机器学习，把数据分析转化为实际决策。</p><p class="work-english">Data science and machine learning from graduate studies.</p><a href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases" target="_blank" rel="noopener" class="work-link">查看项目集 <span aria-hidden="true">↗</span></a><p class="work-note">研究生阶段作品集</p></div>
+            </article>
+            <article class="work-card">
+              <div class="work-art undergrad" aria-hidden="true"><span>⌘</span><div class="art-orbit"></div></div>
+              <div class="work-body"><div class="work-meta"><span>Undergraduate collection</span><span>2013–2017</span></div><h3>本科项目</h3><p class="work-description">从工程问题出发，探索分析、设计与实践。</p><p class="work-english">Engineering and analytical projects from undergraduate studies.</p><a href="https://xyniu0829.wixsite.com/yulia/blank-q17v5" target="_blank" rel="noopener" class="work-link">查看项目集 <span aria-hidden="true">↗</span></a><p class="work-note">本科阶段作品集</p></div>
+            </article>
           </div>
-          <div class="project-card">
-            <div class="project-tag">Graduate</div>
-            <h3>研究生项目</h3>
-            <p class="project-desc">Data science and machine learning research projects from graduate studies.</p>
-            <a
-              href="https://xyniu0829.wixsite.com/yulia/copy-of-ds-cases"
-              target="_blank"
-              rel="noopener"
-              class="card-link"
-            >
-              View Details <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="project-card">
-            <div class="project-tag">Undergraduate</div>
-            <h3>本科项目</h3>
-            <p class="project-desc">Engineering and analytical projects from undergraduate study.</p>
-            <a
-              href="https://xyniu0829.wixsite.com/yulia/blank-q17v5"
-              target="_blank"
-              rel="noopener"
-              class="card-link"
-            >
-              View Details <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
+          <div class="work-footer"><span>左右滑动，沿时间线浏览作品</span><span id="work-position" aria-live="polite">1 / 4</span></div>
         </div>
       </section>
 
@@ -158,5 +128,16 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    (() => {
+      const track=document.getElementById('work-track'), prev=document.getElementById('work-prev'), next=document.getElementById('work-next'), cards=Array.from(track.children);
+      const reduced=()=>window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function update(){const max=track.scrollWidth-track.clientWidth;prev.disabled=track.scrollLeft<=2;next.disabled=track.scrollLeft>=max-2;const nearest=cards.reduce((best,c,i)=>Math.abs(c.offsetLeft-cards[0].offsetLeft-track.scrollLeft)<best.distance?{index:i,distance:Math.abs(c.offsetLeft-cards[0].offsetLeft-track.scrollLeft)}:best,{index:0,distance:Infinity});document.getElementById('work-position').textContent=(next.disabled?cards.length:nearest.index+1)+' / '+cards.length;}
+      function move(direction){const gap=parseFloat(getComputedStyle(track).gap)||24;track.scrollBy({left:direction*(cards[0].getBoundingClientRect().width+gap),behavior:reduced()?'auto':'smooth'});}
+      prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));
+      track.addEventListener('keydown',e=>{if(e.target!==track)return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();move(e.key==='ArrowRight'?1:-1);}});
+      track.addEventListener('scroll',update,{passive:true});window.addEventListener('resize',update);update();
+    })();
+    </script>
   </body>
 </html>
